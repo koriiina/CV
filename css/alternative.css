@@ -1,0 +1,273 @@
+@import url(https://api.fontshare.com/css?f[]=telma@900&f[]=erode@1&display=swap);
+
+/* Starting with a CSS reset */
+
+* {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	box-sizing: border-box;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+/* Defining font styles for the whole body */
+
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Erode", serif;
+	background-color: #ffffff;
+	color: #000020;
+	font-size: clamp(16px, 1.5vw, 20px);
+	line-height: 1.1;
+	height: 100%;
+}
+
+h1, h2, h3, h4, p, li, dt {
+	margin: .3em 0;
+}
+
+.resume-container {
+	display: flex;
+	flex-flow: row;
+	margin: 0 auto;
+	height: 100%;
+}
+
+.resume-bottom {
+	display: flex;
+	flex-flow: row wrap;
+	width: 100%;
+	overflow-y: auto;
+}
+
+.resume-main, .resume-aside {
+	display: flex;
+	flex-flow: column;
+}
+
+section {
+	padding: .5em;
+}
+
+section {
+	background-image: linear-gradient(to bottom, rgba(120, 120, 120, .1), transparent);
+	flex: 1 0 auto;
+}
+
+footer {
+	display: none;
+}
+
+/* Styles for the header (photo, tagline, etc.) */
+
+.resume-header {
+	width: 16%;
+	max-width: 220px;
+	min-width: 80px;
+	display: flex;
+	flex-flow: column;
+	background-color: #301010;
+	color: #f0f0f0;
+	height: 100%;
+	background-image: linear-gradient(to bottom, rgba(255, 255, 255, .1), transparent);
+}
+
+.portrait-container {
+	margin: 10px;
+	border-radius: 130px;
+	background-color: rgba(120,120,120,.4);
+	max-height: 30%;
+}
+
+.portrait-container img {
+	border-radius: 130px;
+	width: 100%;
+	max-height: 100%;
+}
+
+.header-content {
+	text-align: center;
+	display:  flex;
+	flex-flow: row;
+	justify-content: center;
+	overflow: hidden;
+}
+
+h1 {
+	font-size: clamp(28px, 3vh, 40px);
+	font-weight: 900;
+	font-family:  Telma;
+	writing-mode: vertical-lr;
+	transform:  rotate(180deg);
+}
+
+.tagline {
+	font-size: clamp(22px, 2.5vh, 30px);
+	font-weight: 200;
+	font-style: italic;
+	margin: .6em 0;
+	writing-mode: vertical-lr;
+}
+
+/* Styles for the main column */
+
+.resume-main {
+	flex: 1 1 60%;
+	background-color: #f0f0f0;
+}
+
+.biography-item {
+   	display: flex;
+   	margin: .6em 0;
+}
+
+.logo-container {
+	flex: 0 1 20%;
+}
+
+.biography-logo {
+	display: block;
+	margin: .6em auto .3em;
+	max-width: 100%;
+	max-height: 80px;
+}
+
+.biography-contents {
+	flex: 1 0 80%;
+	padding-left: 5px;
+}
+
+.biography-item h4 {
+	font-size: 1.5em;
+	font-weight: 500;
+}
+
+.biography-item h5 {
+	font-size: 1.25em;
+	font-weight: 300;
+	margin-bottom: .5em;
+}
+
+.biography-details li::before, .skill-list li::before {
+	content: "\2605";
+	display: inline-block;
+	width: 1em;
+	margin-left: -1em;
+}
+
+.biography-details li, .skill-list li {
+	padding-left: 1em;
+}
+
+h2 {
+	writing-mode: vertical-lr;
+	font-size: clamp(20px, 2.5vh, 36px);
+	font-weight: 900;
+	font-family:  Telma;
+}
+
+.resume-main h2 {
+	transform:  rotate(180deg);
+	float:  left;
+}
+
+.resume-main h2 + * {
+	margin-left: 2.2em;
+}
+
+/* Styles for the secondary column */
+
+.resume-aside {
+	flex: 1 1 250px;
+	background-color: #282840;
+	color: #f0f0f0;
+	display: flex;
+	flex-flow: column;
+}
+
+.resume-aside a {
+	color: #c0c0ff;
+}
+
+.resume-aside a:hover {
+	opacity: .8;
+}
+
+.language-item {
+	display: flex;
+	margin: .5em 0;
+}
+
+.language-name {
+	width: 50%;
+}
+
+.language-level {
+	position: relative;
+	font-size: .8em;
+	font-weight: 600;
+	width: 50%;
+	height:  1.6em;
+	text-align: center;
+	border: 2px solid #fffff0;
+	color: #000000;
+	text-shadow: 1px 1px 2px #ffffff;
+}
+
+.language-level > * {
+	position: absolute;
+	left: 0;
+	top:  0;
+	height: 100%;
+}
+
+.language-progress {
+	background-color: #ffff00;
+}
+
+.language-level h6 {
+	width: 100%;
+}
+
+.w-25 {
+	width: 25%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.w-75 {
+	width: 75%;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+.contact-item a {
+	display: flex;
+	align-items: center;
+}
+
+.contact-icon {
+	height: 1em;
+	flex-basis: 1.4em;
+	filter: invert();
+}
+
+aside h2 {
+	float:  right;
+}
+
+aside h2 + * {
+	margin-right: 2.2em;
+}
