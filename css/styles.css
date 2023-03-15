@@ -6,9 +6,10 @@
 /* Styles for the body */
 
 body {
-	font-family: Lato, "Open Sans", Roboto, "Segoe UI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	color: #202030;
-	background-color: #B8E2F2;
+	font-family:'Bebas Neue', cursive;
+
+	color: #350B1B;
+	background-color: #554477;
 }
 
 /* Styles for custom classes in the document. (There are more, try to find them out!) */
@@ -18,11 +19,14 @@ body {
 }
 
 .resume-main {
-	background-color: #FFF2D7;
+	background-color: #A37CBD;
 }
 
 .resume-aside {
-	background-color: #FFC0A4;
+	font-family:'Bebas Neue', cursive;
+	color: aliceblue;
+	
+	background-color: #EF9DFA;
 }
 
 /* Styles for lists in the document */
@@ -36,16 +40,31 @@ body {
 }
 
 .biography-details li::before {
-	color: #1E9EB9;
+	color: #E4DDDD;
 }
 
 .biography-details li, .skill-list li {
 	padding-left: 1em;
 }
-
+.language-progress {
+	     color: antiquewhite;
+	} 
+.bg-warning { 
+	background: #CEB7E8 !important;
+	} 
+ 
+.language-level { 
+	color: #5221D0;
+	} 
+	
+	
 /* Styles for contact icons */
 
 .contact-icon {
 	height: 1em;
 	flex-basis: 1.4em;
-}
+	} 
+	
+
+	
+
